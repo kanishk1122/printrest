@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div id="postcontanier" class="columns-6  w-[100vh] h-[100vh] columns-">
+        <% posts.forEach((post)=>{ %>
+            
+            <div id="cards" class="mr-3 h-fit bg-zinc-300 mb-5 w-[100%] inline-top flex flex-col content-center justify-center rounded-2x1 ">
+                <div class="w-[100%]  h-fit bg-zinc-200 rounded-2x1"><img class="w-[135%]   object-cover  rounded-2xl" src="/images/uploads/<%= post.image %>" alt="">
+                  
+                </div>
+                
+            
+             </div>
+       <% }) %>
+    </div>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<%- include('header.ejs') %>
+
+
+
+<div class="w-full h-screen bg-zinc-200 flex absolute rounded-[50px] flex items-center justify-center z-500999090">
+    <div class="w-[38vw] h-[99vh] bg-zinc-100 rounded-[30px] justify-items-center z-888888">
+        <h1 class="text-3xl text-center bold font-semibold text-zinc-800 pt-4 font-medium leading-none ml-2 text-center">Welcome to Pinterest</h1>
+        <% if(error.length > 0) { %>
+            <p id="error">Email or password is incorrect</p>
+        <% } %>
+        <form action="/login" method="post" class="justify-center place-items-center">
+            <div class="block mt-[30px] ml-[20%] md-[-190px] w-[15vw] px-7">Email address</div>
+            <input class="block mb-2 mt-[0px] h-[40px] border:outline-2 ml-[20%] w-[50%] px-7 py-6" type="text" name="username" placeholder="Username">
+            <div class="block mt-[30px] ml-[20%] md-[-190px] w-[15vw] px-7">Password</div>
+            <input class="block mb-2 mt-[0px] h-[40px] border:outline-2 ml-[20%] w-[50%] px-7 py-6" type="password" name="password" placeholder="Password">
+            <a href="#" class="block mb-2 mt-[-20px] h-[40px] border:outline-2 ml-[17%] w-[50%] px-7 py-6"><p class="font-bold text-zinc-600">Forgotten password</p></a>
+            <button type="submit" class="block m-2 ml-[20%] w-[60%] px-3 py-2 bg-red-600 font-bold text-xl text-white rounded-full"><h4>Log in</h4></button>
+            <p class="align-centre text-center ml-[23%] mt-5 w-[50%] text-[13px]">By continuing, you agree to Pinterest's <a href="#"><b>Terms of Service</b></a> and acknowledge that you've read our <a href="#"><b>Privacy Policy</b></a>.</p>
+            <div class="bg-zinc-800 h-0.5 rounded-full ml-[22%] w-[50%]"></div>
+            <p class="align-centre text-center ml-[23%] mt-5 w-[50%] text-[13px]"><a href="/register" class="text-zinc-800"><b>Not on Pinterest yet? Sign up</b></a> Are you a business? Get started <a href="#">here!</a></p>
+        </form>
+    </div>
+</div>
+
+<%- include('footer.ejs') %>

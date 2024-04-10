@@ -1,0 +1,14 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: "gilroy";
+
+}
+form a{
+  font-weight:400;
+}
+form a:hover{
+   text-decoration: underline;
+   text-decoration-color: rgb(137, 135, 135);
+
+}
