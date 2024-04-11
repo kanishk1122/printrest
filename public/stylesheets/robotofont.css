@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'roboto';
-    src: url(../Font/roboto/Roboto-Black.ttf)format('truetype') 
-    url(../Font/roboto/Roboto-Black.ttf)format('woff');
-}
+    src: url(../Font/roboto/Roboto-Black.ttf);
 *{
     font-family: 'roboto';
 }
