@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'roboto';
+    src: url(../Font/roboto/Roboto-Black.ttf)format('truetype') 
+    url(../Font/roboto/Roboto-Black.ttf)format('woff');
+}
+
+
 *{
   margin: 0px;
   padding: 0px;
-  font-family: "gilroy";
+  font-family: 'roboto';
 
 }
 form a{
